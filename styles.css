@@ -1,0 +1,294 @@
+/* styles.css */
+
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 246, 236);
+    background: url('images/new.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: left;
+    height: 100vh; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    font-size: 20px;
+    padding-right:50px;
+}
+
+
+  
+
+
+header a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+   
+}
+header h1 {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+  
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .nav-underline .nav-link {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+header .nav-underline .nav-link.active,
+header .nav-underline .nav-link:hover {
+    border-bottom: 2px solid #000000;
+    color: #320101;
+}
+
+header #branding {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header .highlight,
+header .current a {
+    color: #0b0b0b;
+    font-weight: bold;
+  
+}
+
+header a:hover {
+    color: #1f1f21;
+    font-weight: bold;
+
+}
+header .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fffbfb;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .menu-toggle i {
+    width: 32px;
+    height: 32px;
+
+}
+.hidden {
+    display: none;
+}
+
+.content-section {
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    
+    font-family: 'Times New  Roman';
+}
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+   
+}
+
+#home p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 20px 20px
+    }
+
+/* About Me Section Styles */
+#about { 
+    font-family: 'Times New  Roman';
+ }
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 20px 20px 20px;
+} /* Add margin for spacing */
+
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.popup-mobile-menu {
+    display: none;
+}
+
+footer {
+     color:rgb(10, 10, 10);
+    text-align: center;
+    margin-top: 480px;
+}
+
+footer a {
+    color: #320101;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #151414;
+}
+
+.social-share {
+    margin: 20px 0;
+}
+
+.social-share .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-share ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-share li {
+    margin: 0 10px;
+}
+
+.smoth-animation {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    .popup-mobile-menu {
+        display: block;
+    }
+
+    .popup-mobile-menu .inner {
+        background: #333;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .popup-mobile-menu .menu-top .close-button {
+        text-align: right;
+    }
+
+    .popup-mobile-menu .primary-menu {
+        margin-top: 30px;
+    }
+
+    .popup-mobile-menu .primary-menu li {
+        margin: 20px 0;
+    }
+
+    .popup-mobile-menu .primary-menu a {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.content-section {
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* Additional styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.popup-mobile-menu {
+    display: none;
+}
+
+.popup-mobile-menu.show {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    .popup-mobile-menu {
+        display: block;
+    }
+}

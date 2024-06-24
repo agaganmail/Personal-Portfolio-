@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ankita</h1>
+            <nav>
+                <ul class="nav nav-underline">
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#home" data-section="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#about" data-section="about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#education" data-section="education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#project" data-section="project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts" data-section="contacts">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Open menu"><i data-feather="menu"></i></button>
+            </nav>
+        </header>
+
+        <!-- Start Popup Mobile Menu -->
+        <div class="popup-mobile-menu">
+            <div class="inner">
+                <div class="menu-top">
+                    <div class="menu-header">
+                        <div class="close-button">
+                            <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <ul class="primary-menu nav nav-pills">
+                        <li class="nav-item"><a class="nav-link smoth-animation" href="#home" data-section="home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link smoth-animation" href="#about" data-section="about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link smoth-animation" href="#education" data-section="education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link smoth-animation" href="#project" data-section="project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts" data-section="contacts">Contact</a></li>
+                    </ul>
+                    <!-- social share area -->
+                    <div class="social-share-style-1 mt--40">
+                        <span class="title">Find with me</span>
+                        <ul class="social-share d-flex liststyle">
+                            <li class="instagram"><a href="https://www.instagram.com/_ankita_1303_/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/ankita-gaganmali-a69b33251"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a></li>
+                        </ul>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Mobile Menu -->
+
+        <!-- Home Section -->
+        <section id="home" class="content-section hidden">
+            <h2>Hii, Its Ankita</h2>
+            <p>"Hi, I'm Ankita Mahadev Gaganmali, a passionate and dedicated web developer currently pursuing my Bachelor of Engineering in Information Technology at Nutan Maharashtra Institute of Engineering and Technology. With a keen interest in web development, I am currently honing my skills as a Web Development Intern at Unified Mentor."</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="content-section hidden">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate developer with experience in web development and design. I enjoy creating beautiful and functional websites.</p>
+            
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://github.com/agaganmail" target="_blank">
+                        <img src="images/github.png" alt="Github" class="social-icon">
+                    </a>
+                </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section hidden">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Technology in Computer Science</strong> - ABC University (2020 - 2024)</li>
+                <li><strong>High School Diploma</strong> - XYZ High School (2018 - 2020)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="project" class="content-section hidden">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> <a href="#">E-commerce Website</a> - Developed a fully functional e-commerce website using React and Node.js.</li>
+                <li><strong>Project 2:</strong> <a href="#">Portfolio Website</a> - Created a personal portfolio website to showcase my work and skills.</li>
+                <li><strong>Project 3:</strong> <a href="#">Chat Application</a> - Built a real-time chat application using Socket.io and Express.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts" class="content-section hidden">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+            <ul>
+                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ankita-gaganmali-a69b33251">Ankita Gaganmali</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Ankita Gaganmali. All rights reserved.</p>
+            <a href="resume.pdf" target="_blank">Download Resume</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
