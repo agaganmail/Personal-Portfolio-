@@ -4,7 +4,7 @@ body {
     font-family: Times New Roman;
     margin: 0;
     padding: 0;
-    background-color: rgb(236, 246, 236);
+    background-color: #ecf6ec;
     background: url('images/new.jpg') no-repeat center center/cover;
     justify-content: center;
     align-items: left;
@@ -23,7 +23,9 @@ body {
 }
 
 
-  
+  header{
+    border-bottom: 3px solid #333;
+  }
 
 
 header a {
@@ -75,6 +77,7 @@ header .highlight,
 header .current a {
     color: #0b0b0b;
     font-weight: bold;
+    padding: 0 20px 0 20px;
   
 }
 
@@ -127,7 +130,7 @@ header .menu-toggle i {
     font-size: 1.2em;
     max-width: 600px;
     line-height: 1.6;
-    margin: 0 20px 20px
+    margin: 20px 20px 20px
     }
 
 /* About Me Section Styles */
@@ -141,15 +144,83 @@ header .menu-toggle i {
 }
 
 #about p{
+    font-family: 'Times New  Roman';
     font-size: 1.2em;
     max-width: 600px;
     line-height: 1.6;
     margin: 20px 20px 20px;
 } /* Add margin for spacing */
+#education h2 {
+    font-family: 'Times New  Roman';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+.education-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    width: 80%; /* Adjust width to fit content */
+    max-width: 800px; /* Maximum width for larger screens */
+}
 
+#project h2 {
+    font-family: 'Times New  Roman';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+.project-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    width: 80%; /* Adjust width to fit content */
+    max-width: 800px; /* Maximum width for larger screens */
+}
+.project-list li {
+    background: #ffffff; /* Background color for list items */
+    margin: 10px 0; /* Margin between list items */
+    padding: 20px; /* Padding within each list item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.project-list li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
 
+.project-list li a {
+    color: #0073e6; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
 
-.social-icons {
+.project-list li a:hover {
+    color: #005bb5; /* Darker color on hover */
+}
+
+.project-list li strong {
+    display: block;
+    margin-bottom: 5px; /* Add space below the project title */
+}
+
+.project-list li p {
+    margin: 0; /* Remove default paragraph margin */
+    line-height: 1.6; /* Improved line height for readability */
+}
+#contact h2 {
+    font-family: 'Times New  Roman';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+.contact-list {
+    list-style-type: none; /* Remove default  list style */
+    padding: 0;
+    width: 80%; /* Adjust width to fit content */
+    max-width: 800px; /* Maximum width for larger screens */
+}
+
+.social-cons {
     margin-top: 20px;
 }
 
@@ -166,7 +237,7 @@ header .menu-toggle i {
 footer {
      color:rgb(10, 10, 10);
     text-align: center;
-    margin-top: 480px;
+    margin-bottom: 500px;
 }
 
 footer a {
@@ -175,7 +246,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #151414;
+    color: #2482e6;
 }
 
 .social-share {
